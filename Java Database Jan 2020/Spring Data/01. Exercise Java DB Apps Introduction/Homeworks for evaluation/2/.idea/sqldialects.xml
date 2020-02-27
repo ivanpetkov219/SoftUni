@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/sql/minions_db.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/sql/soft_uni_database.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/Demo/Main.java" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/Demo/MainDiablo.java" dialect="MariaDB" />
+  </component>
+</project>

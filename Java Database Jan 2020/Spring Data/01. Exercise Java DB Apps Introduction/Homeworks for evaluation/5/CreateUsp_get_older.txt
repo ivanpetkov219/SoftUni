@@ -1,0 +1,4 @@
+create procedure usp_get_older(minionId int)
+ begin
+     update minions set age = age+1 where id = minionId;
+ end;
