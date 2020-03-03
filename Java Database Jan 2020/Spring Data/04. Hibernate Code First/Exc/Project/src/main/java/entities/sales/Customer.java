@@ -18,6 +18,7 @@ public class Customer extends BaseEntity {
 
     public Customer() {
     }
+
     @Column(name = "name")
     public String getName() {
         return name;
@@ -26,6 +27,7 @@ public class Customer extends BaseEntity {
     public void setName(String name) {
         this.name = name;
     }
+
     @Column(name = "email")
     public String getEmail() {
         return email;
@@ -34,6 +36,7 @@ public class Customer extends BaseEntity {
     public void setEmail(String email) {
         this.email = email;
     }
+
     @Column(name = "credit_card_number")
     public String getCreditCardNumber() {
         return creditCardNumber;
@@ -43,9 +46,7 @@ public class Customer extends BaseEntity {
         this.creditCardNumber = creditCardNumber;
     }
 
-
-
-    @OneToMany(mappedBy = "sale_id", targetEntity = Customer.class)
+    @OneToMany(mappedBy = "customer", targetEntity = Sale.class)
     public Set<Sale> getSales() {
         return sales;
     }

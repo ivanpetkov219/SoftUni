@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb1e10a2-c26b-41d2-b22f-9c946e6a146a" name="Default Changelist" comment="" />
+    <list default="true" id="bb1e10a2-c26b-41d2-b22f-9c946e6a146a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/universitysystem/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/universitysystem/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../02. Introduction to Hibernate/~$. DB-Advanced-Introduction-to-Hibernate-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/gringotts/WizardDeposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/gringotts/WizardDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/sales/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/sales/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/sales/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/sales/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/sales/StoreLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/sales/StoreLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/WizardDeposit.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +52,6 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gringotts_db: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -44,6 +62,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -52,6 +73,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YIaRjLW5VCnqdPqmetz2aDrKdV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -60,10 +84,11 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -79,8 +104,10 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="hibernate-code-first" />
+      <module name="Project" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582632555985</updated>
       <workItem from="1582632557926" duration="9705000" />
+      <workItem from="1583229009835" duration="14082000" />
     </task>
     <servers />
   </component>
@@ -109,50 +137,73 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="687" y="39" key="#App" timestamp="1583264601276">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="687" y="39" key="#App/0.0.1680.1010@0.0.1680.1010" timestamp="1583264601276" />
+    <state x="432" y="166" key="#Assign_Data_Sources" timestamp="1583270556045">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="166" key="#Assign_Data_Sources/0.0.1680.1010@0.0.1680.1010" timestamp="1583270556045" />
+    <state x="432" y="166" key="#Inspections" timestamp="1583267307486">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="166" key="#Inspections/0.0.1680.1010@0.0.1680.1010" timestamp="1583267307486" />
     <state x="275" y="25" key="#Project_Structure" timestamp="1582632868108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1582632868108" />
+    <state x="570" y="263" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583271981682">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="263" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1583271981682" />
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582635558872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1582635558872" />
-    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1582642895481">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="600" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1583272025036">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582642895481" />
+    <state x="600" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1583272025036" />
     <state x="484" y="233" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582642500664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="484" y="233" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1582642500664" />
-    <state width="1637" height="170" key="GridCell.Tab.0.bottom" timestamp="1582659713147">
+    <state width="1637" height="348" key="GridCell.Tab.0.bottom" timestamp="1583272111568">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582640842055" />
-    <state width="1637" height="170" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582659713147" />
-    <state width="1637" height="170" key="GridCell.Tab.0.center" timestamp="1582659713147">
+    <state width="1637" height="348" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1583272111568" />
+    <state width="1637" height="348" key="GridCell.Tab.0.center" timestamp="1583272111568">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582640842055" />
-    <state width="1637" height="170" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582659713147" />
-    <state width="1637" height="170" key="GridCell.Tab.0.left" timestamp="1582659713147">
+    <state width="1637" height="348" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1583272111568" />
+    <state width="1637" height="348" key="GridCell.Tab.0.left" timestamp="1583272111568">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582640842055" />
-    <state width="1637" height="170" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582659713147" />
-    <state width="1637" height="170" key="GridCell.Tab.0.right" timestamp="1582659713147">
+    <state width="1637" height="348" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1583272111568" />
+    <state width="1637" height="348" key="GridCell.Tab.0.right" timestamp="1583272111568">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582640842055" />
-    <state width="1637" height="170" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582659713147" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582640961259">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="348" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1583272111568" />
+    <state width="242" height="635" key="HiddenNamespacesPopup" timestamp="1583272128143">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1582640961259" />
-    <state x="572" y="257" width="319" height="222" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1582640812664">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="242" height="635" key="HiddenNamespacesPopup/0.0.1680.1010@0.0.1680.1010" timestamp="1583272128143" />
+    <state x="320" y="82" key="SettingsEditor" timestamp="1583245025134">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="320" y="82" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1583245025134" />
+    <state x="703" y="357" width="319" height="222" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583270841352">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="572" y="257" width="319" height="222" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1582640812664" />
+    <state x="703" y="357" width="319" height="222" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1680.1010@0.0.1680.1010" timestamp="1583270841352" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1582641068386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

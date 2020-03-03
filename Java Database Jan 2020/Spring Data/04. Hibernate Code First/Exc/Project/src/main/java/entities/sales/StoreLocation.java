@@ -8,6 +8,7 @@ import java.util.Set;
 @Entity
 @Table(name = "store_locations")
 public class StoreLocation extends BaseEntity {
+
     private String locationName;
     private Set<Sale> sales;
 
@@ -23,7 +24,7 @@ public class StoreLocation extends BaseEntity {
         this.locationName = locationName;
     }
 
-    @OneToMany(mappedBy = "sales", targetEntity = StoreLocation.class)
+    @OneToMany(mappedBy = "storeLocation", targetEntity = Sale.class)
     public Set<Sale> getSales() {
         return sales;
     }

@@ -18,15 +18,29 @@ public class Engine {
     }
 
     public void run() throws IOException {
-        String welcomeInfo = "******************************************************\n" +
-                "Please enter the number of the task you wish to execute:\n" +
-                "Type 2 for Assignment #2 \"Remove Objects\",\n" +
-                "Type 3 for Assignment #3 \"Contains Employee\",\n" +
-                "Type 4 for Assignment #4 \"Employees with Salary Over 50 000\",\n" +
-                "Type 5 for Assignment #5 \"Employees from Department\",\n" +
-                "Type 6 for Assignment #6 \"Adding a New Address and Updating Employee\",\n" +
-                "Type q to exit.";
-        System.out.println(welcomeInfo);
+        String welcomeJava = "**************** JAVA RULZZZ! ***********************\n" +
+                "";
+//        String welcomeInfo = "Please enter the number of the task you wish to execute:\\n\" +\n" +
+//                "                \"Type 1 for Assignment #1 \\\"Gringotts Database\\\",\\n\" +\n" +
+//                "                \"Type 2 for Assignment #2 \\\"Sales Database\\\",\\n\" +\n" +
+//                "                \"Type 3 for Assignment #3 \\\"University System\\\",\\n\" +\n" +
+//                "                \"Type 4 for Assignment #4 \\\"Hospital Database\\\",\\n\" +\n" +
+//                "                \"Type 5 for Assignment #5 \\\"Bills Payment System\\\",\\n\" +\n" +
+//                "                \"Type 6 for Assignment #6 \\\"Football Betting Database\\\",\\n\" +\n" +
+//                "                \"Type q to exit.";
+        System.out.println();
+        System.out.println(welcomeJava);
+//        System.out.println(welcomeInfo);
+
+//        processInput(welcomeInfo);
+        System.out.println("Schema is created!");
+
+//        System.out.println("Terminating application!");
+    }
+
+    private void processInput(String welcomeInfo) throws IOException {
+
+        //this method has nothing to do with this homework
 
         String input = reader.readLine();
         while (!input.equals("q")) {
