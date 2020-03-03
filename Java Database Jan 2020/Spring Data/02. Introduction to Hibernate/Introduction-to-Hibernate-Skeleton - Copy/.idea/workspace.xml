@@ -1,148 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb193994-ec87-4e88-9156-fde9c5069f7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation#NOT_MY_CODE/1/1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation#NOT_MY_CODE/1/JavaDBAppIntroductionExercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation#NOT_MY_CODE/2/Spring Data.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation#NOT_MY_CODE/untitled1/untitled1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/db-apps-introduction#MY_CODE/JavaDBAppsIntroduction.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04. Hibernate Code First/Exc/Project/hibernate-code-first.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/dataSources/9f9fc17e-cb85-4584-a86b-faa46a3ab250.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/dataSources/9f9fc17e-cb85-4584-a86b-faa46a3ab250/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/libraries/Homework_Exercise__Java_DB_Apps_Introduction_865009.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/Homework-Exercise_ Java DB Apps Introduction-865009.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/JavaDBAppIntroductionExercise.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/MainEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentEightIncreaseMinionsAge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentFiveChangeTownNamesCasing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentFourAddMinion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentNineIncreaseAgeStoredProcedure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentSevenPrintAllMinionNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentSixRemoveVillain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentThreeGetMinionNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/assignments/AssignmentTwoGetVillainsNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/out/production/1/resources/minions_db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/MainEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentEightIncreaseMinionsAge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentFiveChangeTownNamesCasing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentFourAddMinion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentNineIncreaseAgeStoredProcedure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentSevenPrintAllMinionNames.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentSixRemoveVillain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentThreeGetMinionNames.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/assignments/AssignmentTwoGetVillainsNames.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/1/src/resources/minions_db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86/storage_v2/_src_/schema/isda.J3cxAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86/storage_v2/_src_/schema/minions_db.QAU07A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86/storage_v2/_src_/schema/minions_db.QAU07A.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/dataSources/b67df377-0f7d-46c9-b158-cb6c58777d86/storage_v2/_src_/schema/soft_uni.W8OYTg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/Homework-Exercise_ Java DB Apps Introduction-870975.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/Spring Data.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/out/production/Spring Data/Demo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/out/production/Spring Data/Demo/MainDiablo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/sql/diablo_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/sql/minions_db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/sql/soft_uni_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/src/Demo/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/2/src/Demo/MainDiablo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/33/Homework-Exercise_ Java DB Apps Introduction-869020.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/33/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/4/Homework-Exercise_ Java DB Apps Introduction-869023.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/5/CreateUsp_get_older.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/5/DBrefresh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/5/Homework-Exercise_ Java DB Apps Introduction-865666.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/5/Problems.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/5/ReadMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources/257abdb4-325f-4204-ac82-c93f254ca443.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources/257abdb4-325f-4204-ac82-c93f254ca443/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources/257abdb4-325f-4204-ac82-c93f254ca443/storage_v2/_src_/schema/minions_db.QAU07A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/dataSources/257abdb4-325f-4204-ac82-c93f254ca443/storage_v2/_src_/schema/minions_db.QAU07A.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/out/production/untitled1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01. Exercise Java DB Apps Introduction/Homeworks for evaluation/untitled1/untitled1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Engine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/04. Hibernate-Code-First-Exercises.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7/storage_v2/_src_/schema/gringotts.u7LRXQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/dataSources/aa4930f5-b012-46a0-a913-6d342f9bf0d7/storage_v2/_src_/schema/soft_uni.W8OYTg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/hibernate-code-first.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/Engine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/gringotts/WizardDeposit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/sales/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/sales/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/sales/Sale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/java/entities/sales/StoreLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/target/classes/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/target/classes/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/target/classes/entities/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Exc/Project/target/classes/entities/WizardDeposit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Lab/04. Hibernate-Code-First-Lab.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03. Hibernate Code First/Lab/04. Hibernate-Code-First.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04. Spring Data Intro/05. DB-Advanced-Spring-Data-Intro-Exercises.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04. Spring Data Intro/Resources.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04. Spring Data Intro/files/authors.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04. Spring Data Intro/files/books.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04. Spring Data Intro/files/categories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/JavaDBAppsIntroduction.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/out/production/JavaDBAppsIntroduction/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDBAppsIntroduction/src/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="fb193994-ec87-4e88-9156-fde9c5069f7b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -282,6 +142,7 @@
       <workItem from="1582906692461" duration="201000" />
       <workItem from="1582907303419" duration="136000" />
       <workItem from="1582907952098" duration="16804000" />
+      <workItem from="1583045091531" duration="65000" />
     </task>
     <servers />
   </component>
@@ -404,11 +265,11 @@
     </state>
     <state x="485" y="63" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582198541399" />
     <state x="606" y="89" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1582271152413" />
-    <state x="522" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1582815969786">
+    <state x="522" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1583045093754">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582206158018" />
-    <state x="522" y="295" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582815969786" />
+    <state x="522" y="295" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1583045093754" />
     <state x="596" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1582270577874" />
     <state x="65" y="0" key="new project wizard" timestamp="1582632328538">
       <screen x="0" y="0" width="1366" height="728" />
