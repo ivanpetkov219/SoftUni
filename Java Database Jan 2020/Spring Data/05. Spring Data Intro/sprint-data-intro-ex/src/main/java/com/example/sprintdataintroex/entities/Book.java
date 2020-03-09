@@ -15,7 +15,7 @@ public class Book extends BaseEntity {
     private EditionType editionType;
     private BigDecimal price;
     private int copies;
-    private LocalDate release_date;
+    private LocalDate releaseDate;
     private AgeRestriction ageRestriction;
     private Set<Category> categories;
     private Author author;
@@ -86,12 +86,12 @@ public class Book extends BaseEntity {
     }
 
     @Column(name = "release_date")
-    public LocalDate getRelease_date() {
-        return release_date;
+    public LocalDate getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setRelease_date(LocalDate release_date) {
-        this.release_date = release_date;
+    public void setReleaseDate(LocalDate release_date) {
+        this.releaseDate = release_date;
     }
 
     @Enumerated(EnumType.ORDINAL)

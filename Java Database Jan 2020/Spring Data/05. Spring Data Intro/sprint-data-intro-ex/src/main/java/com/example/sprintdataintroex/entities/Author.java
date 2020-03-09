@@ -11,7 +11,7 @@ public class Author extends BaseEntity {
     private String lastName;
     private Set<Book> books;
 
-    @OneToMany(mappedBy = "author", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "author", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     public Set<Book> getBooks() {
         return books;
     }
