@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb193994-ec87-4e88-9156-fde9c5069f7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../~$. DB-Advanced-Introduction-to-Hibernate-Exercises.docx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/entities/AgeRestriction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/entities/AgeRestriction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/entities/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/impl/AuthorsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/impl/AuthorsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/utils/FileUtilImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/java/com/example/sprintdataintroex/utils/FileUtilImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../05. Spring Data Intro/sprint-data-intro-ex/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06. Spring Data Advanced Quering/Exc/~$. Spring-Data-Advanced-Querying-Exercises.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +158,7 @@
       <workItem from="1582907952098" duration="16804000" />
       <workItem from="1583045091531" duration="65000" />
       <workItem from="1583502628209" duration="220000" />
+      <workItem from="1583522474730" duration="1644000" />
     </task>
     <servers />
   </component>
