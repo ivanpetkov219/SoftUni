@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customer full-name="Zada Attwood" bought-cars="4" spent-money="23038.5"/>
+    <customer full-name="Brett Brickley" bought-cars="4" spent-money="14649.630000000001"/>
+    <customer full-name="Hipolito Lamoreaux" bought-cars="3" spent-money="12256.73"/>
+    <customer full-name="Rico Peer" bought-cars="2" spent-money="11730.200000000003"/>
+    <customer full-name="Marcelle Griego" bought-cars="3" spent-money="11352.45"/>
+    <customer full-name="Audrea Cardinal" bought-cars="3" spent-money="9089.869999999999"/>
+    <customer full-name="Carole Witman" bought-cars="2" spent-money="8728.5"/>
+    <customer full-name="Ann Mcenaney" bought-cars="2" spent-money="6107.040000000001"/>
+    <customer full-name="Nisha Markwell" bought-cars="1" spent-money="4629.98"/>
+    <customer full-name="Hai Everton" bought-cars="1" spent-money="4598.17"/>
+    <customer full-name="Lino Subia" bought-cars="2" spent-money="3576.04"/>
+    <customer full-name="Yvonne Mccalla" bought-cars="1" spent-money="2911.34"/>
+    <customer full-name="Rema Revelle" bought-cars="1" spent-money="1960.68"/>
+    <customer full-name="Johnette Derryberry" bought-cars="1" spent-money="1142.63"/>
+</customers>

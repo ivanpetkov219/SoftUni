@@ -1,20 +1,18 @@
 package softuni.exam.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
 import javax.validation.Validator;
 import java.util.Set;
 
-public class ValidatorUtilImpl implements ValidatorUtil {
+public class ValidationUtilImpl implements ValidationUtil {
 
     private final Validator validator;
 
-    @Autowired
-    public ValidatorUtilImpl(Validator validator) {
-        this.validator = validator;
+    public ValidationUtilImpl() {
+        this.validator = Validation.buildDefaultValidatorFactory().getValidator();
     }
-
 
     @Override
     public <E> boolean isValid(E entity) {
