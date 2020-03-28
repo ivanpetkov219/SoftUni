@@ -1,10 +1,11 @@
 package softuni.exam.domain.dtos;
 
+
 import com.google.gson.annotations.Expose;
 import org.hibernate.validator.constraints.Length;
+import softuni.exam.domain.entities.Picture;
 import softuni.exam.domain.entities.Position;
 
-import javax.persistence.Enumerated;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -24,9 +25,9 @@ public class PlayerSeedDto {
     @Expose
     private Position position;
     @Expose
-    private PictureSeedDto picture;
+    private PictureSeedDto pictureSeedDto;
     @Expose
-    private TeamSeedDto team;
+    private TeamSeedDto teamSeedDto;
 
     public PlayerSeedDto() {
     }
@@ -40,7 +41,8 @@ public class PlayerSeedDto {
         this.firstName = firstName;
     }
 
-    @Length(min = 3, max = 15)
+    @NotNull
+    @Length(min = 3, max = 20)
     public String getLastName() {
         return lastName;
     }
@@ -49,8 +51,9 @@ public class PlayerSeedDto {
         this.lastName = lastName;
     }
 
-    @Min(1)
-    @Max(99)
+    @NotNull
+    @Min(value = 1)
+    @Max(value = 99)
     public Integer getNumber() {
         return number;
     }
@@ -59,6 +62,7 @@ public class PlayerSeedDto {
         this.number = number;
     }
 
+    @NotNull
     @DecimalMin(value = "0")
     public BigDecimal getSalary() {
         return salary;
@@ -77,27 +81,20 @@ public class PlayerSeedDto {
         this.position = position;
     }
 
-
-
-
-
-
-
     @NotNull
-    public PictureSeedDto getPicture() {
-        return picture;
+    public PictureSeedDto getPictureSeedDto() {
+        return pictureSeedDto;
     }
 
-    public void setPicture(PictureSeedDto picture) {
-        this.picture = picture;
+    public void setPictureSeedDto(PictureSeedDto pictureSeedDto) {
+        this.pictureSeedDto = pictureSeedDto;
     }
-
     @NotNull
-    public TeamSeedDto getTeam() {
-        return team;
+    public TeamSeedDto getTeamSeedDto() {
+        return teamSeedDto;
     }
 
-    public void setTeam(TeamSeedDto team) {
-        this.team = team;
+    public void setTeamSeedDto(TeamSeedDto teamSeedDto) {
+        this.teamSeedDto = teamSeedDto;
     }
 }

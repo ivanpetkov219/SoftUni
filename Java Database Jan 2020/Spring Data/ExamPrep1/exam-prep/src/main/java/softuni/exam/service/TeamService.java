@@ -14,5 +14,6 @@ public interface TeamService {
 
     String readTeamsXmlFile() throws IOException;
 
-    Team getByName(String name);
+    Team getTeamByName(String name);
+
 }

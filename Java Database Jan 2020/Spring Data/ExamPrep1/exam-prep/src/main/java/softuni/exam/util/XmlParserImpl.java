@@ -22,5 +22,13 @@ public class XmlParserImpl implements XmlParser{
         return (T) unmarshaller.unmarshal(new FileReader(filePath));
     }
 
+    @Override
+    public <T> void covertToFile(String filePath, T roodDto) throws JAXBException {
+        JAXBContext jaxbContext = JAXBContext.newInstance(roodDto.getClass());
+        Marshaller marshaller = jaxbContext.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        marshaller.marshal(roodDto, new File(filePath));
+    }
+
 
 }

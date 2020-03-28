@@ -1,69 +1,69 @@
 package softuni.exam.service;
 
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import softuni.exam.constants.GlobalConstants;
 import softuni.exam.domain.dtos.PictureSeedRootDto;
 import softuni.exam.domain.entities.Picture;
 import softuni.exam.repository.PictureRepository;
-import softuni.exam.util.ValidatorUtil;
+import softuni.exam.util.ValidationUtil;
 import softuni.exam.util.XmlParser;
+
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.Path;
+import java.util.Arrays;
 
-import static softuni.exam.constants.GlobalConstants.*;
+import static softuni.exam.constants.GlobalConstants.PICTURES_FILE_PATH;
+
 
 @Service
 public class PictureServiceImpl implements PictureService {
 
     private final PictureRepository pictureRepository;
+    private final ValidationUtil validationUtil;
     private final ModelMapper modelMapper;
-    private final ValidatorUtil validatorUtil;
     private final XmlParser xmlParser;
 
-
-    @Autowired
-    public PictureServiceImpl(PictureRepository pictureRepository, ModelMapper modelMapper, ValidatorUtil validatorUtil, XmlParser xmlParser) {
+    public PictureServiceImpl(PictureRepository pictureRepository, ValidationUtil validationUtil, ModelMapper modelMapper, XmlParser xmlParser) {
         this.pictureRepository = pictureRepository;
+        this.validationUtil = validationUtil;
         this.modelMapper = modelMapper;
-        this.validatorUtil = validatorUtil;
         this.xmlParser = xmlParser;
     }
 
 
     @Override
     public String importPictures() throws IOException, JAXBException {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder result = new StringBuilder();
 
-        PictureSeedRootDto pictureSeedRootDto = this.xmlParser
+        PictureSeedRootDto pictureSeedRootDtos = this.xmlParser
                 .convertFromFile(PICTURES_FILE_PATH, PictureSeedRootDto.class);
 
-        pictureSeedRootDto
-                .getPictureSeedDtos()
-                .forEach(pictureSeedDto -> {
-                    if (this.validatorUtil.isValid(pictureSeedDto)) {
-                        if (this.pictureRepository.findByUrl(pictureSeedDto.getUrl()) == null) {
-                            Picture picture = this.modelMapper.map(pictureSeedDto, Picture.class);
 
-                            this.pictureRepository.saveAndFlush(picture);
-                            stringBuilder.append(String.format(VALID_DATA_MSG,
-                                    picture.getClass().getSimpleName().toLowerCase(), picture.getUrl() ))
-                                    .append(System.lineSeparator());
-                        } else {
-                            stringBuilder.append("Already in DB")
-                                    .append(System.lineSeparator());
-                        }
-                    } else {
-                        stringBuilder.append("Invalid Picture")
-                                .append(System.lineSeparator());
-                    }
-                });
 
-        return stringBuilder.toString();
+       pictureSeedRootDtos.getPictures().forEach(pictureSeedDto -> {
+            if(this.validationUtil.isValid(pictureSeedDto)){
+                if(this.pictureRepository.findByUrl(pictureSeedDto.getUrl()) == null){
+                    Picture picture = this.modelMapper.map(pictureSeedDto, Picture.class);
+
+                    result.append(String.format("Successfully imported picture - %s", pictureSeedDto.getUrl()));
+
+                    this.pictureRepository.saveAndFlush(picture);
+
+                }else {
+                    result.append("Picture already exists in the database!");
+                }
+            }else {
+                result.append("Invalid picture!");
+            }
+
+            result.append(System.lineSeparator());
+        });
+
+       return result.toString().trim();
     }
 
     @Override
@@ -73,12 +73,14 @@ public class PictureServiceImpl implements PictureService {
 
     @Override
     public String readPicturesXmlFile() throws IOException {
-        return Files.readString(Paths.get(PICTURES_FILE_PATH));
+
+        return Files.readString(Path.of(PICTURES_FILE_PATH));
     }
 
     @Override
     public Picture getPictureByUrl(String url) {
         return this.pictureRepository.findByUrl(url);
     }
+
 
 }

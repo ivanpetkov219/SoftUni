@@ -1,15 +1,16 @@
 package softuni.exam.service;
 
+
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import softuni.exam.domain.dtos.TeamSeedRootDto;
 import softuni.exam.domain.entities.Picture;
 import softuni.exam.domain.entities.Team;
 import softuni.exam.repository.PictureRepository;
 import softuni.exam.repository.TeamRepository;
-import softuni.exam.util.ValidatorUtil;
+import softuni.exam.util.ValidationUtil;
 import softuni.exam.util.XmlParser;
+
 
 import javax.transaction.Transactional;
 import javax.xml.bind.JAXBException;
@@ -18,67 +19,76 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static softuni.exam.constants.GlobalConstants.*;
+import static softuni.exam.constants.GlobalConstants.TEAMS_FILE_PATH;
+
 
 @Service
+@Transactional
 public class TeamServiceImpl implements TeamService {
 
     private final TeamRepository teamRepository;
-    private final ValidatorUtil validatorUtil;
+    private final PictureService pictureService;
+    private final ValidationUtil validationUtil;
     private final ModelMapper modelMapper;
     private final XmlParser xmlParser;
-    private final PictureService pictureService;
-    private final PictureRepository pictureRepository;
 
-    @Autowired
-    public TeamServiceImpl(TeamRepository teamRepository, ValidatorUtil validatorUtil, ModelMapper modelMapper, XmlParser xmlParser, PictureService pictureService, PictureRepository pictureRepository) {
+    public TeamServiceImpl(TeamRepository teamRepository, PictureService pictureService, ValidationUtil validationUtil, ModelMapper modelMapper, XmlParser xmlParser) {
         this.teamRepository = teamRepository;
-        this.validatorUtil = validatorUtil;
+        this.pictureService = pictureService;
+        this.validationUtil = validationUtil;
         this.modelMapper = modelMapper;
         this.xmlParser = xmlParser;
-        this.pictureService = pictureService;
-        this.pictureRepository = pictureRepository;
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
 
     @Override
+    
     public String importTeams() throws JAXBException, FileNotFoundException {
         StringBuilder sb = new StringBuilder();
 
-        TeamSeedRootDto teamSeedRootDto = this.xmlParser
-                .convertFromFile(TEAMS_FILE_PATH, TeamSeedRootDto.class);
+        TeamSeedRootDto teamSeedRootDto = this.xmlParser.convertFromFile(TEAMS_FILE_PATH, TeamSeedRootDto.class);
 
-        teamSeedRootDto.getTeams()
-                .forEach(teamSeedDto -> {
-                    if (this.validatorUtil.isValid(teamSeedDto)) {
-                        if (this.teamRepository.findByName(teamSeedDto.getName()) == null) {
-                            Team team = this.modelMapper.map(teamSeedDto, Team.class);
+        teamSeedRootDto.getTeams().stream().forEach(teamSeedDto -> {
 
-                            Picture picture = this.pictureService
-                                    .getPictureByUrl(team.getPicture().getUrl());
+            if(this.validationUtil.isValid(teamSeedDto)){
+                if(this.teamRepository.findByName(teamSeedDto.getName()) == null){
 
-                            team.setPicture(picture);
 
-                            this.teamRepository.saveAndFlush(team);
+                   if(this.pictureService.getPictureByUrl(teamSeedDto.getPicture().getUrl()) != null){
+                       Team team = this.modelMapper.map(teamSeedDto, Team.class);
 
-                            sb.append("Successfully imported - ")
-                                    .append(team.getName())
-                                    .append(System.lineSeparator());
-                        } else {
-                            sb.append("Already in DB")
-                                    .append(System.lineSeparator());
-                        }
-                    } else {
-                        sb.append("Invalid team")
-                                .append(System.lineSeparator());
-                    }
-                });
+                       Picture picture = this.pictureService.getPictureByUrl(teamSeedDto.getPicture().getUrl());
 
-        return sb.toString();
+                    team.setPicture(picture);
+
+                       sb.append(String.format("Successfully imported - %s", teamSeedDto.getName()));
+
+                       this.teamRepository.saveAndFlush(team);
+
+
+                   }else {
+                       sb.append("Invalid team");
+                   }
+
+
+                }else {
+                    sb.append("Team is already in the database!");
+                }
+
+            }else {
+                sb.append("Invalid team");
+            }
+
+            sb.append(System.lineSeparator());
+
+        });
+
+
+
+
+
+
+       return sb.toString().trim();
     }
 
     @Override
@@ -92,7 +102,8 @@ public class TeamServiceImpl implements TeamService {
     }
 
     @Override
-    public Team getByName(String name) {
+    public Team getTeamByName(String name) {
         return this.teamRepository.findByName(name);
     }
+
 }

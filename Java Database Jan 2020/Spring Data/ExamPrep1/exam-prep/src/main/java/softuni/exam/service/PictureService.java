@@ -13,4 +13,5 @@ public interface PictureService {
     String readPicturesXmlFile() throws IOException;
 
     Picture getPictureByUrl(String url);
+
 }

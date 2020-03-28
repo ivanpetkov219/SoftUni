@@ -11,16 +11,17 @@ import java.util.List;
 public class PictureSeedRootDto {
 
     @XmlElement(name = "picture")
-    private List<PictureSeedDto> pictureSeedDtos;
+    public List<PictureSeedDto> pictures;
 
     public PictureSeedRootDto() {
     }
 
-    public List<PictureSeedDto> getPictureSeedDtos() {
-        return pictureSeedDtos;
+
+    public List<PictureSeedDto> getPictures() {
+        return pictures;
     }
 
-    public void setPictureSeedDtos(List<PictureSeedDto> pictureSeedDtos) {
-        this.pictureSeedDtos = pictureSeedDtos;
+    public void setPictures(List<PictureSeedDto> pictures) {
+        this.pictures = pictures;
     }
 }

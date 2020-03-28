@@ -8,6 +8,6 @@ public interface ValidationUtil {
 
     <E> boolean isValid(E entity);
 
-    <E> Set<ConstraintViolation<E>> violations (E entity);
+    <E> Set<ConstraintViolation<E>> violations(E entity);
 
 }

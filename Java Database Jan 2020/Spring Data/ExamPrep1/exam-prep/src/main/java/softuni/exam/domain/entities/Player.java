@@ -1,30 +1,25 @@
 package softuni.exam.domain.entities;
 
+
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "players")
-public class Player extends BaseEntity{
-    /*
-    •	id – integer number, primary identification field.
-•	first_name – a string (required).
-•	last_name – a string (required) between 3 and 15 characters.
-•	number – a Integer (required) between 1 and 99.
-•	salary – a Bigdecimal (required) min 0.
-•	position – an ENUM (required).
-•	picture – a Picture entity (required).
-•	team – a Team entity (required).
+public class Player extends BaseEntity {
 
-     */
-
-    private String firstName;
-    private String lastName;
-    private Integer number;
-    private BigDecimal salary;
-    private Position position;
-    private Picture picture;
-    private Team team;
+        private String firstName;
+        private String lastName;
+        private Integer number;
+        private BigDecimal salary;
+        private Position position;
+        private Picture picture;
+        private Team team;
 
     public Player() {
     }
@@ -37,8 +32,8 @@ public class Player extends BaseEntity{
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
     @Column(name = "last_name", nullable = false)
+    @Length(min = 3, max = 15, message = "Invalid player last name length!")
     public String getLastName() {
         return lastName;
     }
@@ -46,8 +41,9 @@ public class Player extends BaseEntity{
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    @Column(name = "number")
+    @Column(name = "number", nullable = false)
+    @Min(value = 0)
+    @Max(value = 99)
     public Integer getNumber() {
         return number;
     }
@@ -55,8 +51,8 @@ public class Player extends BaseEntity{
     public void setNumber(Integer number) {
         this.number = number;
     }
-
     @Column(name = "salary", nullable = false)
+    @Min(value = 0)
     public BigDecimal getSalary() {
         return salary;
     }
@@ -65,6 +61,7 @@ public class Player extends BaseEntity{
         this.salary = salary;
     }
 
+    @Column(name = "position", nullable = false)
     @Enumerated(EnumType.STRING)
     public Position getPosition() {
         return position;
@@ -74,7 +71,8 @@ public class Player extends BaseEntity{
         this.position = position;
     }
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.DETACH})
+
+    @ManyToOne
     public Picture getPicture() {
         return picture;
     }
@@ -83,7 +81,7 @@ public class Player extends BaseEntity{
         this.picture = picture;
     }
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.DETACH})
+    @ManyToOne
     public Team getTeam() {
         return team;
     }

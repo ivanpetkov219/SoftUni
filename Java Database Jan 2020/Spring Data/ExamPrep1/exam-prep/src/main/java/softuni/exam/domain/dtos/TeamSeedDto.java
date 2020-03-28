@@ -1,6 +1,6 @@
 package softuni.exam.domain.dtos;
 
-import com.google.gson.annotations.Expose;
+
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotNull;
@@ -14,16 +14,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class TeamSeedDto {
 
     @XmlElement(name = "name")
-    @Expose
     private String name;
     @XmlElement(name = "picture")
-    @Expose
     private PictureSeedDto picture;
 
     public TeamSeedDto() {
     }
 
     @Length(min = 3, max = 20)
+    @NotNull
     public String getName() {
         return name;
     }

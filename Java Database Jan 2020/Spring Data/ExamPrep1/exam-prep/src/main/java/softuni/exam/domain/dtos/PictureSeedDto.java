@@ -1,6 +1,5 @@
 package softuni.exam.domain.dtos;
 
-import com.google.gson.annotations.Expose;
 
 import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class PictureSeedDto {
 
     @XmlElement(name = "url")
-    @Expose
     private String url;
 
     public PictureSeedDto() {
     }
+
 
     @NotNull
     public String getUrl() {
