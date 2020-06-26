@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import prep.models.binding.UserLoginBindingModel;
 import prep.models.binding.UserRegisterBindingModel;
 import prep.models.service.UserServiceModel;
 import prep.services.UserService;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Controller
@@ -30,6 +32,31 @@ public class UsersController {
     public String login(){
         return "login";
     }
+
+
+    @PostMapping("/login")
+    public String loginConfirm(@Valid @ModelAttribute("userLoginBindingModel")
+                                           UserLoginBindingModel userLoginBindingModel,
+                               BindingResult bindingResult, RedirectAttributes redirectAttributes, HttpSession httpSession) {
+
+        if(bindingResult.hasErrors()) {
+
+            return "redirect:login";
+        }
+
+        UserServiceModel userServiceModel = this.userService.findByUsername(userLoginBindingModel.getUsername());
+
+        if(userServiceModel == null || !userServiceModel.getPassword().equals(userLoginBindingModel.getPassword())){
+
+            redirectAttributes.addFlashAttribute("notFound", true);
+            return "redirect:login";
+        }
+
+        httpSession.setAttribute("user", userServiceModel);
+
+        return "redirect:/";
+    }
+
 
     @GetMapping("/register")
     public String register(){
@@ -50,7 +77,7 @@ public class UsersController {
 
         this.userService.register(this.modelMapper.map(userRegisterBindingModel, UserServiceModel.class));
 
-        return "redirect:/";
+        return "redirect:login";
 
 
     }

@@ -16,7 +16,7 @@ public class UserRegisterBindingModel {
     public UserRegisterBindingModel() {
     }
 
-    @Length(min = 2, message = "Username lenght must be more than two characters!")
+    @Length(min = 2, message = "Username length must be more than two characters!")
     public String getUsername() {
         return username;
     }
@@ -43,7 +43,7 @@ public class UserRegisterBindingModel {
         this.budget = budget;
     }
 
-    @Length(min = 2, message = "Password lenght must be more than two characters!")
+    @Length(min = 2, message = "Password length must be more than two characters!")
     public String getPassword() {
         return password;
     }
