@@ -1,0 +1,36 @@
+package exam.services.impl;
+
+import exam.models.entities.Category;
+import exam.models.entities.CategoryName;
+import exam.repositories.CategoryRepository;
+import exam.services.CategoryService;
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+
+@Service
+public class CategoryServiceImpl implements CategoryService {
+
+    private final CategoryRepository categoryRepository;
+    private final ModelMapper modelMapper;
+
+    public CategoryServiceImpl(CategoryRepository categoryRepository, ModelMapper modelMapper) {
+        this.categoryRepository = categoryRepository;
+        this.modelMapper = modelMapper;
+    }
+
+    @Override
+    public void initCategories() {
+
+        if(this.categoryRepository.count() == 0){
+
+            Arrays.stream(CategoryName.values()).forEach(categoryName -> {
+                this.categoryRepository.saveAndFlush(new Category(categoryName, String.format("Description for %s", categoryName.name())));
+            });
+        }
+
+    }
+
+
+}

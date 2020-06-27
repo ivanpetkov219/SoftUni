@@ -1,23 +1,22 @@
-package prep.models.binding;
+package exam.models.binding;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 public class UserRegisterBindingModel {
+
     private String username;
     private String email;
-    private BigDecimal budget;
     private String password;
     private String confirmPassword;
 
     public UserRegisterBindingModel() {
     }
 
-    @Length(min = 2, message = "Username length must be more than two characters!")
+    @Length(min = 3, max = 20, message = "Username length must be between 3 and 20 characters (inclusive 3 and 20).")
     public String getUsername() {
         return username;
     }
@@ -27,6 +26,7 @@ public class UserRegisterBindingModel {
     }
 
     @Email(message = "Enter valid email!")
+    @NotNull(message = "Email cannot be null!")
     public String getEmail() {
         return email;
     }
@@ -35,16 +35,7 @@ public class UserRegisterBindingModel {
         this.email = email;
     }
 
-    @DecimalMin(value = "0")
-    public BigDecimal getBudget() {
-        return budget;
-    }
-
-    public void setBudget(BigDecimal budget) {
-        this.budget = budget;
-    }
-
-    @Length(min = 2, message = "Password length must be more than two characters!")
+    @Length(min = 3, max = 20, message = "Password length must be between 3 and 20 characters (inclusive 3 and 20).")
     public String getPassword() {
         return password;
     }
