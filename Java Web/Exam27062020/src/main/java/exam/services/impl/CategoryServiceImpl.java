@@ -32,5 +32,10 @@ public class CategoryServiceImpl implements CategoryService {
 
     }
 
+    @Override
+    public Category findByCategoryName(CategoryName categoryName) {
+        return this.categoryRepository.findByCategoryName(categoryName);
+    }
+
 
 }

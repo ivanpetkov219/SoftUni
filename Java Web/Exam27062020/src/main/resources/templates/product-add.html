@@ -1,35 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shopping list App</title>
-    <link rel="stylesheet" href="/css/reset-css.css"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <th:block th:include="~{/fragments/head}"></th:block>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg bg-nav rounded">
-        <a class="nav-link text-white active h5" href="/">Shopping List App</a>
-        <a class="nav-link text-white active h5" href="/">Add Product</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <ul class="navbar-nav row">
-                    <li class="nav-item col-md-4">
-                        <a class="nav-link text-white active h5" href="/">Logout</a>
-                    </li>
-                </ul>
-            </div>
+        <th:block th:include="~{/fragments/nav}"></th:block>
 	</nav>
 </header>
 <main>
     <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Add product</span></h1>
     <hr class="hr-3 w-25 bg-white"/>
-    <form class="mx-auto w-25 bg-blur rounded" method="" action="/">
+    <form class="mx-auto w-25 bg-blur rounded" method="POST" th:action="@{/products/add}">
         <div class="form-group">
             <div class="label-holder textCol d-flex justify-content-center">
                 <label for="name" class="h4 mb-2 text-white">Name</label>
@@ -64,7 +47,10 @@
             </div>
             <select class="browser-default custom-select" id="category" name="category">
                 <option value="">Select category</option>
-				<option value="FOOD">Food</option>
+<!--&lt;!&ndash;				<option th:each="o : ${T(exam.models.entities.CategoryName).values()}"&ndash;&gt; Знам, че се прави така, но по някаква причина-->
+<!--                не ми дава да ги изкарам като масив и да го итерирам. И на екзам препа не искаше да ми го направи, а писах едно към едно с Чочо.-->
+<!--                        th:text="${o}" th:value="${o}">Food</option>-->
+                <option value="DRINK">Food</option>
                 <option value="DRINK">Drink</option>
                 <option value="HOUSEHOLD">Household</option>
                 <option value="OTHER">Other</option>  				
@@ -79,11 +65,7 @@
 </main>
 
 <footer class="footer bg-transparent  py-2">
-    <div class="container-fluid text-center">
-		<div class="footer-background h5 text-white">
-           &copy; Spring team 2020. All rights reserved.
-		</div>
-	</div>
+    <th:block th:include="~{/fragments/footer}"></th:block>
 </footer>
 </body>
 </html>
