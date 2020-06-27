@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "categories")
-public class Category extends BaseEntity{
+public class Category extends BaseEntity {
 
     private CategoryName categoryName;
     private String description;
@@ -19,8 +19,6 @@ public class Category extends BaseEntity{
         this.categoryName = categoryName;
         this.description = description;
     }
-
-
 
     @Enumerated
     public CategoryName getCategoryName() {

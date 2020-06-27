@@ -33,7 +33,10 @@
             </div>
             <select class="browser-default custom-select" id="category" name="category">
                 <option value="">Select category</option>
-                <option th:each="o : ${T(prep.models.entities.CategoryName)}" value="SHIRT">Shirt</option>
+                <option value="SHIRT">Shirt</option>
+                <option value="DENIM">Denim</option>
+                <option value="SHORTS">Shorts</option>
+                <option value="JACKET">Jacket</option>
             </select>
         </div>
         <div class="form-group">

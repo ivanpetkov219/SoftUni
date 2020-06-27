@@ -2,15 +2,29 @@ package prep.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+import prep.services.ItemService;
 
 import javax.servlet.http.HttpSession;
 
 @Controller
 public class HomeController {
+    private final ItemService itemService;
+
+    public HomeController(ItemService itemService) {
+        this.itemService = itemService;
+    }
 
     @GetMapping("/")
-    public String index(HttpSession httpSession){
+    public ModelAndView index(HttpSession httpSession, ModelAndView modelAndView){
 
-        return httpSession.getAttribute("user") == null ? "index" : "home";
+        if(httpSession.getAttribute("user") == null){
+            modelAndView.setViewName("index");
+        }else {
+            modelAndView.addObject("items", this.itemService.findAllItems());
+            modelAndView.setViewName("home");
+        }
+
+        return modelAndView;
     }
 }

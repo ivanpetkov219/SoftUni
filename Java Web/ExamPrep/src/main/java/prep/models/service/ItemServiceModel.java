@@ -1,24 +1,21 @@
-package prep.models.entities;
+package prep.models.service;
 
-import javax.persistence.*;
-import javax.validation.constraints.DecimalMin;
-import java.lang.annotation.Target;
+
+import prep.models.entities.Category;
+
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "items")
-public class Item extends BaseEntity {
+public class ItemServiceModel extends BaseServiceModel{
 
     private String name;
     private String description;
     private BigDecimal price;
-    private Category category;
+    private CategoryServiceModel category;
     private String gender;
 
-    public Item() {
+    public ItemServiceModel() {
     }
 
-    @Column(name = "name", nullable = false, unique = true)
     public String getName() {
         return name;
     }
@@ -27,7 +24,6 @@ public class Item extends BaseEntity {
         this.name = name;
     }
 
-    @Column(name = "description")
     public String getDescription() {
         return description;
     }
@@ -36,7 +32,6 @@ public class Item extends BaseEntity {
         this.description = description;
     }
 
-    @Column(name = "price", nullable = false)
     public BigDecimal getPrice() {
         return price;
     }
@@ -45,16 +40,14 @@ public class Item extends BaseEntity {
         this.price = price;
     }
 
-    @ManyToOne(cascade = CascadeType.MERGE)
-    public Category getCategory() {
+    public CategoryServiceModel getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(CategoryServiceModel category) {
         this.category = category;
     }
 
-    @Column(name = "gender", nullable = false)
     public String getGender() {
         return gender;
     }
